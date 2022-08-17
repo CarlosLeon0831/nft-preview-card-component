@@ -1,0 +1,78 @@
+/* * {
+    border: 1px solid red;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-bg);
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+p {
+    color: var(--soft-blue);
+}
+
+.price {
+    color: var(--cyan);
+}
+
+.credit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.author {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--soft-blue);
+  }
+  .attribution a {
+    color: var(--cyan);
+    text-decoration: none;
+  }
+
+:root {
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 375px) {
+
+}
