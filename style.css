@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
@@ -13,7 +13,7 @@ html, body {
     background: var(--main-bg);
     color: var(--white);
     font-family: 'Outfit', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     align-items: center;
     justify-content: center;
@@ -31,11 +31,19 @@ footer {
 
 h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 p {
     color: var(--soft-blue);
+}
+
+hr {
+    display: block;
+    height: 0px;
+    width: 100%;
+    border-color: var(--line);
+    border-style: solid;
 }
 
 main {
@@ -49,25 +57,69 @@ main {
     display: flex;
     flex-direction: column;
     background: var(--card-bg);
-    width: 500px;
-    padding: 10px 30px;
-    border-radius: 10px;
+    width: 300px;
+    padding: 25px 25px;
+    border-radius: 15px;
 }
 
 .hero-image {
     height: 300px;
     width: 300px;
+    border-radius: 10px;
+}
+
+.eye {
+    display: none;
+    padding: 120px;
+    border-radius: 10px;
+}
+
+.eye:hover {
+    display: block;
+    z-index: 99;
+    background: var(--cyan);
+}
+
+.author:hover,
+.title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 0;
+}
+
+.info {
+    display: flex;
+    gap: 5.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .price {
     color: var(--cyan);
+    margin-top: 0;
+    font-weight: 600;
 }
+
+.days-left {
+    margin-top: 0;
+}
+
 
 .credit {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3px;
+}
+
+.credit img {
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .author {
