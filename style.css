@@ -63,22 +63,48 @@ main {
 }
 
 .hero-image {
-    height: 300px;
-    width: 300px;
+    display: flex;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
+}
+
+.image__top {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.image__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.466);
+    border-radius: 10px;
+    display: none;
+}
+
+.image__top:hover .image__overlay{
+    display: block;
+    cursor: pointer;
+}
+
+.image__overlay img {
+    position: absolute;
+    display: block;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .eye {
-    display: none;
-    padding: 120px;
+    display: flex;
     border-radius: 10px;
 }
 
-.eye:hover {
-    display: block;
-    z-index: 99;
-    background: var(--cyan);
-}
 
 .author:hover,
 .title:hover {
@@ -149,5 +175,11 @@ main {
 }
 
 @media screen and (max-width: 375px) {
+    .card__container {
+        width: 280px;
+    }
 
+    .info {
+        gap: 4rem;
+    }
 }
